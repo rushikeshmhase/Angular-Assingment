@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+
+}
+
+.table-container {
+
+    /* max-width: 1800px; */
+    margin: 0 auto;
+}
+
+.spacer {
+    flex: 1 1 auto;
+    color: aqua;
+}
+
+.container {
+    margin-left: 40%;
+}

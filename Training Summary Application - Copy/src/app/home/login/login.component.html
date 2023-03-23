@@ -1,0 +1,67 @@
+<div class="bootstrap-wrapper" style="background-image: url('assets/login.jpg');width: 100%;height: 100%;">
+    <div class="Container">
+
+        <!-- <div class="image" style="background-image: url('assets/login.jpg');"></div> -->
+
+        <div class="col-md-5 offset-md-7">
+
+            <mat-card>
+                <!-- <div class="image">
+
+            <img src="assets/login.jpg">
+        </div> -->
+
+                <!-- <mat-card-content style="text-align: right;"> -->
+                <p
+                    style="font-family:georgia,garamond,serif;font-size:24px;font-style:italic;text-align: center;color: red;margin-top:8%;">
+                    Welcome to Training Summary Application
+                </p><br>
+                <p
+                    style="font-family:georgia,garamond,serif;font-size:24px;font-style:italic;text-align: center;color: blue;">
+                    Login Here !!!
+                </p><br>
+                <!-- </mat-card-content> -->
+
+                <form [formGroup]="loginform" align="center" style="margin:7%;">
+                    <mat-form-field>
+                        <input matInput placeholder="Email" type="email" required formControlName="email"
+                            [(ngModel)]="email">
+                        <mat-icon matSuffix color="primary">email</mat-icon>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field>
+                        <input matInput placeholder="Password" type="password" formControlName="password"
+                            [(ngModel)]="password">
+                        <mat-icon matSuffix color="primary">lock</mat-icon>
+                    </mat-form-field>
+                    <!-- <br> -->
+                    <br>
+
+                    <mat-radio-group aria-label="Select an option" formControlName="radioButton"
+                        [(ngModel)]="radioButton">
+                        <mat-radio-button value="admin">Admin</mat-radio-button>
+                        <mat-radio-button value="customer">User</mat-radio-button>
+                    </mat-radio-group>
+
+                    <br>
+                    <button type="submit" mat-raised-button color="primary" (click)="login()">Login</button>
+                    <h4><a routerLink="/register">New User?Register Here</a></h4>
+
+
+                    <a (click)="signInWithGoogle()" style="text-decoration: none;cursor: pointer;">
+                        <!-- <div class="card shadow text-center"> -->
+                        <div class="card-body">
+                            <img src="../../../assets/icons8-google-48.png" alt="" height="24px" width="24px"> Sign
+                            In with Google
+                        </div>
+                    </a>
+
+                </form>
+                <!-- </mat-card-content> -->
+                <!-- </mat-card> -->
+
+            </mat-card>
+        </div>
+
+    </div>
+</div>

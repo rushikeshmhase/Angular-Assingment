@@ -1,0 +1,101 @@
+<div mat-dialog-title style="margin-left: 130px;margin-top: 40px;">
+    <h1>Training Application Form</h1>
+</div>
+
+<form [formGroup]="trainingForm" (ngSubmit)="onSubmit()">
+<div mat-dialog-content style="margin-left: 40px;">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Training Name</mat-label>
+            <input matInput type="text" placeholder="Training Name" formControlName="trainingName">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label> Mode Of Training</mat-label>
+            <mat-select formControlName="modeOfTraining">
+              <mat-option *ngFor="let val of modeOfTraining" [value] ="val">{{val}}
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Planned Head Count</mat-label>
+            <input matInput type="text" placeholder="Planned Head Count" formControlName="plannedHeadCount">
+        </mat-form-field>
+   
+        <mat-form-field appearance="outline">
+            <mat-label>Actual Head Count</mat-label>
+            <input matInput type="text" placeholder="Actual Head Count" formControlName="actualHeadCount">
+        </mat-form-field>
+    </div>
+    
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Technologies</mat-label>
+            <input matInput type="text" placeholder="Technologies" formControlName="technologies">
+        </mat-form-field>
+   
+         <mat-form-field appearance="outline">
+            <mat-label> Training Pattern</mat-label>
+            <mat-select formControlName="trainingPattern">
+              <mat-option *ngFor="let val of trainingPattern" [value] ="val">{{val}}
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div class ="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Start Date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="startDate">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>End Date</mat-label>
+            <input matInput [matDatepicker]="picker1" formControlName="endDate">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+    </div>
+
+
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Duration In Days</mat-label>
+            <input matInput type="number" placeholder="Duration In Days" formControlName="durationInDays">
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+            <mat-label>Trainer Name</mat-label>
+            <input matInput type="text" placeholder="Trainer Name" formControlName="trainerName">
+        </mat-form-field>
+    </div>
+
+    
+     <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Timing</mat-label>
+            <input matInput type="text" placeholder="Timimg In Hours" formControlName="timing">
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+            <mat-label>Status</mat-label>
+            <mat-select formControlName="status">
+              <mat-option *ngFor="let val of status" [value] ="val">{{val}}
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+
+<div mat-dialog-actions class="action" style="margin-left: 180px;"> 
+    <button   mat-raised-button color="primary" type="submit" [disabled]="!trainingForm.valid">{{data ? 'Update': 'Save' }}</button>
+</div>
+</form>
+

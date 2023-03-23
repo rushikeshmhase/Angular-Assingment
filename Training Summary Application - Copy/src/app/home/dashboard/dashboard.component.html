@@ -1,0 +1,78 @@
+
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav>
+  
+      <mat-nav-list (click)="sidenav.close()">
+        <a mat-list-item routerLink="/viewtraining" routerLinkActive="active">
+            <mat-icon>person_add</mat-icon>
+            <span>View Training</span>
+  
+        </a>
+        <!-- <a mat-list-item routerLink="/">
+          <mat-icon> add_comment</mat-icon>
+          <span>Add new Traning</span>
+        </a> -->
+
+      </mat-nav-list>
+  
+  
+    </mat-sidenav>
+  
+  
+  
+    <mat-toolbar color="primary"  class="mat-elevation-z3">
+  
+     
+      <button mat-icon-button (click)="sidenav.open()">
+        <mat-icon>menu</mat-icon>&nbsp;
+        
+      </button>
+      <span class="spacer"></span>
+      <a  mat-button  routerLink="/">Logout</a>
+  
+  
+      <!-- <a mat-button    routerLink="/" routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+        Home
+      </a> -->
+  
+      <!-- <a mat-button    routerLink="/" routerLinkActive="active">
+        <mat-icon>account_circle</mat-icon>
+        Login
+      </a>
+  
+      <a mat-button     routerLink="/" routerLinkActive="active">
+        <mat-icon>person_add</mat-icon>
+        Register
+      </a>
+  
+    
+  
+      <div class="demo-section">
+        <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+          <span class="cdk-visually-hidden">
+            Example with a home icon with overlaid badge showing the number 15
+          </span>
+      </div>
+  
+      <a mat-button     routerLink="/" routerLinkActive="active">
+        <mat-icon>task</mat-icon>      Task
+      </a> -->
+  
+
+     
+      <!-- <div class="extra-space" *ngIf="userName!=null">
+        <h2>Welcome <b>{{userName}} </b></h2>
+      </div> -->
+
+    </mat-toolbar>
+  <p style="font-family:georgia,garamond,serif;font-size:26px;font-style:italic;text-align: center;color: blue;margin-top: 2%;">
+    Welcome to Admin Panel!!! You can view training details here.</p>
+  
+    <div class="text-center">
+      <img src="assets/admin.jpg" />
+    </div>
+  
+      <!-- <router-outlet></router-outlet> -->
+  </mat-sidenav-container> 
+  

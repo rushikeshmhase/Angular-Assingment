@@ -1,0 +1,210 @@
+{
+  "getTrainingDetails": [
+    {
+      "id": 1,
+      "trainingName": "Angular Intermediate",
+      "modeOfTraining": "Online",
+      "plannedHeadCount": 10,
+      "actualHeadCount": 9,
+      "technologies": "Angular Material",
+      "trainingPattern": "Theory / Practical",
+      "duration": 17,
+      "trainerName": "Jaynam",
+      "startDate": "2023-02-28",
+      "endDate": "2023-03-21",
+      "timing": "3 Hours",
+      "trainingStatus": "Inprogress",
+      "edited": "No"
+    },
+    {
+      "id": 2,
+      "trainingName": "Angular Basic",
+      "modeOfTraining": "Offline",
+      "plannedHeadCount": 17,
+      "actualHeadCount": 15,
+      "technologies": "Angular crud Operation",
+      "trainingPattern": "Theory / Practical",
+      "duration": 10,
+      "trainerName": "Vimal",
+      "startDate": "2022-11-28",
+      "endDate": "2022-12-21",
+      "timing": "3 Hours",
+      "trainingStatus": "Completed",
+      "edited": "No"
+    },
+    {
+      "id": 3,
+      "trainingName": "AWS",
+      "modeOfTraining": "Online",
+      "plannedHeadCount": 20,
+      "actualHeadCount": 19,
+      "technologies": "AWS basic",
+      "trainingPattern": "Theory",
+      "duration": 19,
+      "trainerName": "Pankaj",
+      "startDate": "2023-01-01",
+      "endDate": "2023-01-24",
+      "timing": "3 Hours",
+      "trainingStatus": "Completed",
+      "edited": "No"
+    },
+    {
+      "id": 4,
+      "trainingName": "React-js",
+      "modeOfTraining": "Online",
+      "plannedHeadCount": 14,
+      "actualHeadCount": 14,
+      "technologies": "React Basic",
+      "trainingPattern": "Theory / Practical",
+      "duration": 15,
+      "trainerName": "Snehal",
+      "startDate": "2023-02-01",
+      "endDate": "2023-02-24",
+      "timing": "3 Hours",
+      "trainingStatus": "Completed",
+      "edited": "No"
+    },
+    {
+      "id": 5,
+      "trainingName": "Angular Advance",
+      "modeOfTraining": "Online",
+      "plannedHeadCount": 10,
+      "actualHeadCount": 10,
+      "technologies": "Angular ",
+      "trainingPattern": "Theory / Practical",
+      "duration": 18,
+      "trainerName": "Jaynam",
+      "startDate": "2023-04-09",
+      "endDate": "2023-04-31",
+      "timing": "3 Hours",
+      "trainingStatus": "planned",
+      "edited": "No"
+    },
+    {
+      "id": 6,
+      "trainingName": "Java Basic",
+      "modeOfTraining": "Offline",
+      "plannedHeadCount": 30,
+      "actualHeadCount": 27,
+      "technologies": "core Java",
+      "trainingPattern": "Theory / Practical",
+      "duration": 5,
+      "trainerName": "Jaynam",
+      "startDate": "2022-10-09",
+      "endDate": "2022-10-15",
+      "timing": "3 Hours",
+      "trainingStatus": "Completed",
+      "edited": "No"
+    },
+    {
+      "id": 7,
+      "trainingName": "Java Advance",
+      "modeOfTraining": "Online",
+      "plannedHeadCount": 35,
+      "actualHeadCount": 32,
+      "technologies": "Advance Java ",
+      "trainingPattern": "Theory / Practical",
+      "duration": 5,
+      "trainerName": "Jaynam",
+      "startDate": "2022-10-16",
+      "endDate": "2022-10-22",
+      "timing": "3 Hours",
+      "trainingStatus": "Completed",
+      "edited": "No"
+    },
+    {
+      "trainingName": "Phyton",
+      "modeOfTraining": "Online",
+      "plannedHeadCount": "23",
+      "actualHeadCount": "19",
+      "technologies": "basic",
+      "trainingPattern": "Theory",
+      "durationInDays": 12,
+      "trainerName": "Jay",
+      "startDate": "2023-03-07T18:30:00.000Z",
+      "endDate": "2023-03-13T18:30:00.000Z",
+      "timing": "2",
+      "status": "Inprogress",
+      "id": 8
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "trainingUsers": [
+    {
+      "trainingName": "Angular Material",
+      "modeOfTraining": "Online",
+      "plannedHeadCount": "10",
+      "actualHeadCount": "10",
+      "technologies": "Angular",
+      "trainingPattern": "Theory/Practical",
+      "startDate": "2023-02-28T18:30:00.000Z",
+      "endDate": "2023-03-10T18:30:00.000Z",
+      "durationInDays": 17,
+      "trainerName": "Jaynam",
+      "timing": "12",
+      "status": "Inprogress",
+      "id": 1
+    },
+    {
+      "trainingName": "AWS",
+      "modeOfTraining": "Online",
+      "plannedHeadCount": "20",
+      "actualHeadCount": "17",
+      "technologies": "Basic Theory",
+      "trainingPattern": "Theory",
+      "startDate": "2023-02-28T18:30:00.000Z",
+      "endDate": "2023-03-29T18:30:00.000Z",
+      "durationInDays": 17,
+      "trainerName": "Pankaj",
+      "timing": "34 ",
+      "status": "Inprogress",
+      "id": 2
+    },
+    {
+      "trainingName": "React Js",
+      "modeOfTraining": "Online",
+      "plannedHeadCount": "25",
+      "actualHeadCount": "21",
+      "technologies": "React, JavaScript",
+      "trainingPattern": "Theory/Practical",
+      "startDate": "2023-01-31T18:30:00.000Z",
+      "endDate": "2023-02-23T18:30:00.000Z",
+      "durationInDays": 18,
+      "trainerName": "Snehal",
+      "timing": "38",
+      "status": "Completed",
+      "id": 3
+    },
+    {
+      "trainingName": "Java Backend",
+      "modeOfTraining": "Offline",
+      "plannedHeadCount": "15",
+      "actualHeadCount": "15",
+      "technologies": "core java, advance java ",
+      "trainingPattern": "Theory/Practical",
+      "startDate": "2023-03-26T18:30:00.000Z",
+      "endDate": "2023-04-23T18:30:00.000Z",
+      "durationInDays": 21,
+      "trainerName": "Jaynam",
+      "timing": "40 ",
+      "status": "Planned",
+      "id": 4
+    }
+  ]
+}

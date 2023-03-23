@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "onlinefood-3cadf": {
+      "hosting": {
+        "Doctor_Appointment_System": [
+          "onlinefood-3cadf"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "onlinefood-3cadf"
+  }
+}
